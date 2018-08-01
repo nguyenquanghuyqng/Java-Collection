@@ -20,6 +20,7 @@ public class SortedMapExample {
 //        sm.put(new Integer(null), "null");//  --->   ERROR
         sm.put(new Integer(-8), null);
         sm.put(new Integer(2), null);
+        sm.put(9, null);
 
         show(sm);
     }

@@ -13,6 +13,7 @@ public class LinkedHashmapDemo {
         linkedHashmap.put(1, "Basic java");
         linkedHashmap.put(3, "Collection");
         linkedHashmap.put(2, "OOP");
+        linkedHashmap.put(2, "OOPA");
 
 
         for (Integer key : linkedHashmap.keySet()) {
