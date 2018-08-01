@@ -1,16 +1,20 @@
 package com.java.collection.list;
 
+import java.lang.reflect.Field;
 import java.util.*;
 
 public class TestList {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         // ArrayList
-        List<String> al = new ArrayList<String>();//creating arraylist
+        ArrayList<String> al = new ArrayList<>();//creating arraylist
         al.add("Sonoo");//adding object in arraylist
         al.add("Michael");
         al.add("James");
+        al.add("Andy");
+        al.add("");
+        al.add(null);
         al.add("Andy");
         //traversing elements using Iterator
         Iterator itr = al.iterator();
@@ -18,7 +22,7 @@ public class TestList {
             System.out.print(itr.next() + " ");
         }
 
-        System.out.println("List example .....");
+        System.out.format("\nList example -----------Capacity: %d%n", getCapacityArrayList(al));
         List<String> list = new ArrayList<String>();
         list.add("1");
         list.add("2");
@@ -31,21 +35,20 @@ public class TestList {
         }
 
         // Vector
-        System.out.println("\nVector ---------- ");
-        Vector<String> v = new Vector<String>();//creating vector
+        Vector<String> v = new Vector<String>(5);//creating vector
         v.add("umesh");//method of Collection
         v.addElement("irfan");//method of Vector
         v.addElement("kumar");
         v.addElement("");
+        v.addElement(null);
         v.addElement("kumar");
-
+        System.out.format("\nVector -----------Capacity: %d%n", getCapacityVector(v));
         System.out.print("Vector : " + v+"\n");
         //traversing elements using Enumeration
         Enumeration e = v.elements();
         while (e.hasMoreElements()) {
             System.out.print(e.nextElement()+ " ");
         }
-
 
                 // LinkedList
         System.out.println("\nLinkedList -------- ");
@@ -57,5 +60,16 @@ public class TestList {
         al2.add("");
         al2.add("Junaid");
         System.out.println("linkedlist: "+al2);
+    }
+
+    public static int getCapacityArrayList(ArrayList<?> list) throws Exception {
+        Field dataField = ArrayList.class.getDeclaredField("elementData");
+        dataField.setAccessible(true);
+        return ((Object[]) dataField.get(list)).length;
+    }
+    public static int getCapacityVector(Vector<?> list) throws Exception {
+        Field dataField = Vector.class.getDeclaredField("elementData");
+        dataField.setAccessible(true);
+        return ((Object[]) dataField.get(list)).length;
     }
 }

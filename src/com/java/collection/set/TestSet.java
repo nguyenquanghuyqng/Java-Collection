@@ -10,11 +10,11 @@ public class TestSet {
         HashSet dset = new HashSet();
         dset.add(2);
         dset.add(1);
-        dset.add(3);
+        dset.add(null);
         dset.add(5);
-        dset.add(4);
+        dset.add(5);
         Iterator iterator = dset.iterator();
-        System.out.print("\nHashSet : ");
+        System.out.print("\nHashSet : " );
         while (iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
         }
