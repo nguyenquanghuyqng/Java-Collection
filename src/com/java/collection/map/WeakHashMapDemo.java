@@ -17,6 +17,7 @@ public class WeakHashMapDemo {
 
         hashMap.put(keyHashMap, "helloHash");
         weakHashMap.put(keyWeakHashMap, "helloWeakHash");
+
         System.out.println("Before: hash map value:"+hashMap.get("keyHashMap")+" " +
                 "and weak hash map value:"+weakHashMap.get("keyWeakHashMap"));
 
