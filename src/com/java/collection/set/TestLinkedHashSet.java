@@ -11,11 +11,11 @@ public class TestLinkedHashSet {
 	public static void main(String args[]) {
 		// VD 1
 		List<Dog> list = new ArrayList<>();
-		list.add(new Dog("Huy"));
-		list.add(new Dog("Hieu"));
-		list.add(new Dog("ahaha"));
-		list.add(new Dog("zahoo"));
-		list.add(new Dog("Huy"));
+		list.add(new Dog("Huy",20));
+		list.add(new Dog("Hieu",10));
+		list.add(new Dog("ahaha",1));
+		list.add(new Dog("zahoo",9));
+		list.add(new Dog("Huy",70));
 
 		Set<Dog> tset = new LinkedHashSet<Dog>(list);
 

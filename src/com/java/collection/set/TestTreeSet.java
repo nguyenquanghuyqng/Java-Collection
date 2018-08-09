@@ -8,11 +8,11 @@ public class TestTreeSet {
 	public static void main(String args[]) {
 		// VD 1
 		List<Dog> list = new ArrayList<>();
-		list.add(new Dog("Huy"));
-		list.add(new Dog("Hieu"));
-		list.add(new Dog("ahaha"));
-		list.add(new Dog("zahoo"));
-		list.add(new Dog("Huy"));
+		list.add(new Dog("Huy", 60));
+		list.add(new Dog("Hieu", 80));
+		list.add(new Dog("ahaha", 70));
+		list.add(new Dog("zahoo", 30));
+		list.add(new Dog("Huy", 20));
 
 		Set<Dog> tset = new TreeSet<Dog>(list);
 

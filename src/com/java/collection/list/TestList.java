@@ -17,6 +17,7 @@ public class TestList {
         al.add(null);
         al.add("Andy");
         //traversing elements using Iterator
+        System.out.println("ArrayList :"+al);
         Iterator itr = al.iterator();
         while (itr.hasNext()) {
             System.out.print(itr.next() + " ");
@@ -35,7 +36,7 @@ public class TestList {
         }
 
         // Vector
-        Vector<String> v = new Vector<String>(5);//creating vector
+        Vector<String> v = new Vector<String>(2);//creating vector
         v.add("umesh");//method of Collection
         v.addElement("irfan");//method of Vector
         v.addElement("kumar");
