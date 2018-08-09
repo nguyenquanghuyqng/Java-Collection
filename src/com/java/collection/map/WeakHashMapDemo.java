@@ -18,15 +18,14 @@ public class WeakHashMapDemo {
         hashMap.put(keyHashMap, "helloHash");
         weakHashMap.put(keyWeakHashMap, "helloWeakHash");
 
-        System.out.println("Before: hash map value:"+hashMap.get("keyHashMap")+" " +
-                "and weak hash map value:"+weakHashMap.get("keyWeakHashMap"));
-
+        System.out.println("HashMap before: "+hashMap);
+        System.out.println("WeakHashMap before: "+weakHashMap);
         keyHashMap = null;
         keyWeakHashMap = null;
 
         System.gc();
+        System.out.println("\nHashMap After: "+hashMap);
+        System.out.println("WeakHashMap After: "+weakHashMap);
 
-        System.out.println("After: hash map value:"+hashMap.get("keyHashMap")+" " +
-                "and weak hash map value:"+weakHashMap.get("keyWeakHashMap"));
     }
 }

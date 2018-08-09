@@ -28,18 +28,13 @@ public class IdentityHashMapDemo {
             System.out.println("Key : " + str2 + " and Value : " + hashMap.get(str2));
         }
         System.out.println("Size of hashMap is : " + hashMap.size());
-
-        /*String a = new String("x");
-        String b = new String("x");
-        String c ="x";
-
-        System.out.println("a==b ? "+ (a==b));// kết quả: a==b?false
-
-        System.out.println("a.equals(b)?" + a.equals(b));// kết quả e.quals(b)?true
-
-        System.out.println("a==c ? "+ (a==c));// kết quả: a==b?false
-
-        System.out.println("a.equals(c)?" + a.equals(c));// kết quả e.quals(b)?true*/
+//
+//        String a = new String("x");
+//        String c ="x";
+//
+//        System.out.println("a==c: "+ (a==c));// kết quả: a==c?false
+//
+//        System.out.println("a.equals(c):" + a.equals(c));// kết quả e.quals(c)?true
 
     }
 }

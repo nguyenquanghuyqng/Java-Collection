@@ -12,7 +12,6 @@ public class HashMapExample {
     public static void main(String args[]) {
 
         HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
-
         hashMap.put(4, "Python");
         hashMap.put(null, null);
         hashMap.put(1, "Java");
@@ -22,7 +21,6 @@ public class HashMapExample {
         hashMap.put(-9, null);
         hashMap.put(-9, "Javascipt");
         hashMap.put(null, "C");
-
         show(hashMap);
     }
 
