@@ -28,7 +28,7 @@ public class Dog implements Comparable<Dog>{
 
 	@Override
 	public String toString() {
-		return "Dog: " + name + ", weight: " + weight + " | ";
+		return "Dog: " + name + ", weight: " + weight + ", hashCode: " +hashCode() + " | ";
 	}
 
 	@Override
