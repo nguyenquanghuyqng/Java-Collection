@@ -16,7 +16,7 @@ public class TestPerformance {
 		long startTime = System.nanoTime();
 		for (int i = 0; i < 1000; i++) {
 			int x = r.nextInt(1000 - 10) + 10;
-			hashSet.add(new Dog(String.valueOf(x)));
+			hashSet.add(new Dog(String.valueOf(x), x));
 		}
 		long endTime = System.nanoTime();
 		long duration = endTime - startTime;
@@ -26,7 +26,7 @@ public class TestPerformance {
 		startTime = System.nanoTime();
 		for (int i = 0; i < 1000; i++) {
 			int x = r.nextInt(1000 - 10) + 10;
-			treeSet.add(new Dog(String.valueOf(x)));
+			treeSet.add(new Dog(String.valueOf(x), x));
 		}
 		endTime = System.nanoTime();
 		duration = endTime - startTime;
@@ -36,7 +36,7 @@ public class TestPerformance {
 		startTime = System.nanoTime();
 		for (int i = 0; i < 1000; i++) {
 			int x = r.nextInt(1000 - 10) + 10;
-			linkedHashSet.add(new Dog(String.valueOf(x)));
+			linkedHashSet.add(new Dog(String.valueOf(x), x));
 		}
 		endTime = System.nanoTime();
 		duration = endTime - startTime;

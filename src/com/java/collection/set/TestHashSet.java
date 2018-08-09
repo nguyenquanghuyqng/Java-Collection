@@ -10,11 +10,11 @@ public class TestHashSet {
 	public static void main(String args[]) {
 		// VD 1
 		List<Dog> list = new ArrayList<>();
-		list.add(new Dog("Huy"));
-		list.add(new Dog("Hieu"));
-		list.add(new Dog("ahaha"));
-		list.add(new Dog("zahoo"));
-		list.add(new Dog("Huy"));
+		list.add(new Dog("Huy", 20));
+		list.add(new Dog("Hieu", 30));
+		list.add(new Dog("ahaha", 10));
+		list.add(new Dog("zahoo", 0));
+		list.add(new Dog("Huy", 2));
 
 		Set<Dog> tset = new HashSet<Dog>(list);
 
